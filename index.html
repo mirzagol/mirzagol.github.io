@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hossein Mirzagol — Data Science &amp; ML Engineer</title>
+<meta name="description" content="Hossein Mirzagol — M.Sc. Data Science student at TU Dortmund. Machine learning, computer vision, NLP, and full-stack web development.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌘</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">HM<span class="cursor">_</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav.about">about</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">skills</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">projects</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">experience</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">contact</a></li>
+    </ul>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn is-active" id="langEn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" id="langDe" data-lang="de">DE</button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow reveal" data-i18n="hero.eyebrow">
+          <span class="dot"></span> available for werkstudent roles · dortmund, de
+        </p>
+        <h1 class="reveal" data-i18n="hero.heading">
+          Hi, I'm <span class="gradient-text">Hossein Mirzagol</span>.
+        </h1>
+        <p class="hero-role reveal">
+          <span class="typed" id="typed"></span><span class="type-cursor">|</span>
+        </p>
+        <p class="hero-desc reveal" data-i18n="hero.desc">
+          M.Sc. Data Science student at <strong>TU Dortmund University</strong>, building
+          machine learning systems, transformer models, and full-stack web applications.
+          I turn messy data and rough ideas into things that ship.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.btnProjects">View projects</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero.btnContact">Get in touch</a>
+        </div>
+        <div class="hero-links reveal">
+          <a href="https://github.com/mirzagol" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+          </a>
+          <a href="mailto:mirzagol_ho@outlook.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.8 6.1 7.8-6.1H4.2Zm15.8 1.7-7.32 5.73a1.5 1.5 0 0 1-1.85 0L4 7.5v11h16v-11Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <div class="model-card">
+          <div class="model-card-head">
+            <span class="model-card-label">model_card.yaml</span>
+            <span class="model-card-badge">v2026.1</span>
+          </div>
+          <pre class="model-card-body"><code><span class="y-rule">---</span>
+<span class="y-key">name</span>: <span class="y-str">Hossein Mirzagol</span>
+<span class="y-key">type</span>: <span class="y-str">data-scientist / ml-engineer</span>
+<span class="y-key">location</span>: <span class="y-str">Dortmund, DE</span>
+<span class="y-key">base_model</span>: <span class="y-str">B.Sc. Computer Science</span><span class="y-com">, IUST</span>
+<span class="y-key">fine_tuned_at</span>: <span class="y-str">M.Sc. Data Science</span><span class="y-com">, TU Dortmund</span>
+<span class="y-key">training_data</span>:
+  <span class="y-dash">-</span> <span class="y-str">1yr operations &amp; data advisory</span>
+  <span class="y-dash">-</span> <span class="y-str">4 semesters as teaching assistant</span>
+  <span class="y-dash">-</span> <span class="y-str">10+ shipped repositories</span>
+<span class="y-key">capabilities</span>: [<span class="y-str">pytorch</span>, <span class="y-str">react</span>, <span class="y-str">postgresql</span>, <span class="y-str">nlp</span>]
+<span class="y-key">languages</span>: [<span class="y-str">fa</span>, <span class="y-str">en</span>, <span class="y-str">de</span>]
+<span class="y-key">license</span>: <span class="y-str">open-to-work</span>
+<span class="y-rule">---</span></code></pre>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-tag reveal">~/about</p>
+      <h2 class="section-title reveal" data-i18n="about.title">From production floors to production code.</h2>
+      <div class="about-grid reveal">
+        <div class="about-copy">
+          <p data-i18n="about.p1">
+            I'm a Data Science M.Sc. student at <strong>TU Dortmund University</strong>, with a
+            B.Sc. in Computer Science from Iran University of Science and Technology. My work
+            spans the full stack of "data to product": training transformer and neural-network
+            models from scratch, running reproducible statistical studies, designing relational
+            databases with real business logic, and shipping responsive React/TypeScript
+            applications used by real users.
+          </p>
+          <p data-i18n="about.p2">
+            Before grad school, I spent a year as a business-process &amp; data advisor inside a
+            furniture manufacturer — reading warehouse and production data, walking the floor,
+            and turning both into layout and routing changes leadership actually adopted. I've
+            also administered secure company storage infrastructure and taught software design,
+            computer vision, and data mining as a university TA.
+          </p>
+          <p data-i18n="about.p3">
+            I like problems that don't stay in one layer — the kind that need a model, an API,
+            a schema, and an interface that a non-technical person can actually use.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label" data-i18n="about.stat1">public repos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">4</span>
+            <span class="stat-label" data-i18n="about.stat2">TA roles taught</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3</span>
+            <span class="stat-label" data-i18n="about.stat3">languages spoken</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">IELTS 8</span>
+            <span class="stat-label" data-i18n="about.stat4">English proficiency</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">~/stack</p>
+      <h2 class="section-title reveal" data-i18n="skills.title">Tools I reach for.</h2>
+      <div class="skills-grid reveal">
+
+        <div class="skill-card">
+          <div class="skill-head"><span class="skill-icon">🧠</span><h3 data-i18n="skills.h1">ML &amp; Deep Learning</h3></div>
+          <div class="tag-list">
+            <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">scikit-learn</span>
+            <span class="tag">Transformers</span><span class="tag">Computer Vision</span><span class="tag">YOLO</span>
+            <span class="tag">NLP</span><span class="tag">Reinforcement Learning</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head"><span class="skill-icon">📊</span><h3 data-i18n="skills.h2">Data &amp; Statistics</h3></div>
+          <div class="tag-list">
+            <span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">statsmodels</span>
+            <span class="tag">ANOVA</span><span class="tag">Mixed-Effects Models</span><span class="tag">matplotlib</span>
+            <span class="tag">seaborn</span><span class="tag">Jupyter</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head"><span class="skill-icon">💻</span><h3 data-i18n="skills.h3">Frontend &amp; Web</h3></div>
+          <div class="tag-list">
+            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span>
+            <span class="tag">Material UI</span><span class="tag">Chakra UI</span><span class="tag">React Router</span>
+            <span class="tag">REST APIs</span><span class="tag">RTL / i18n</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head"><span class="skill-icon">🗄️</span><h3 data-i18n="skills.h4">Databases &amp; Backend</h3></div>
+          <div class="tag-list">
+            <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">PL/pgSQL</span>
+            <span class="tag">Schema Design</span><span class="tag">Triggers &amp; Views</span><span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head"><span class="skill-icon">⚙️</span><h3 data-i18n="skills.h5">DevOps &amp; Systems</h3></div>
+          <div class="tag-list">
+            <span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">Nginx</span>
+            <span class="tag">Linux</span><span class="tag">Git / GitLab</span><span class="tag">NAS / FTPS</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head"><span class="skill-icon">🎨</span><h3 data-i18n="skills.h6">Design &amp; Media</h3></div>
+          <div class="tag-list">
+            <span class="tag">Figma</span><span class="tag">Adobe XD</span><span class="tag">After Effects</span>
+            <span class="tag">Premiere Pro</span><span class="tag">DaVinci Resolve</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-tag reveal">~/projects</p>
+      <h2 class="section-title reveal" data-i18n="projects.title">Selected work.</h2>
+      <p class="section-sub reveal" data-i18n="projects.sub">Pulled from <a href="https://github.com/mirzagol" target="_blank" rel="noopener">github.com/mirzagol</a> — code you can actually go read.</p>
+
+      <div class="projects-grid reveal">
+
+        <article class="project-card featured">
+          <div class="project-top">
+            <span class="project-kind" data-i18n="projects.kind1">web · private repo</span>
+          </div>
+          <h3>Ettehad — News &amp; Publishing Platform</h3>
+          <p data-i18n="projects.desc1">Persian-first political/news SPA with public, member, and admin experiences: OTP login, protected routes, a rich-text editor that round-trips to Markdown, media uploads, and a full registration-review workflow — Dockerized behind Nginx.</p>
+          <div class="tag-list small">
+            <span class="tag">React 19</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">MUI</span><span class="tag">RTL</span><span class="tag">Docker</span>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-top">
+            <span class="project-kind" data-i18n="projects.kind2">web · live</span>
+            <div class="project-links">
+              <a href="https://github.com/mirzagol/sangian" target="_blank" rel="noopener" aria-label="GitHub repo" data-i18n="projects.code">code</a>
+              <a href="https://sangiansofa.com" target="_blank" rel="noopener" aria-label="Live site" data-i18n="projects.live">live ↗</a>
+            </div>
+          </div>
+          <h3>Sangian — Furniture Storefront</h3>
+          <p data-i18n="projects.desc2">Responsive e-commerce storefront for a premium furniture retailer: advanced filtering, detailed product pages, and RTL support, architected from scratch and shipped to production.</p>
+          <div class="tag-list small">
+            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Chakra UI</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-kind" data-i18n="projects.kind3">ml · nlp</span>
+            <div class="project-links">
+              <a href="https://github.com/mirzagol/Shahnameh-Character-Level-Language-Model" target="_blank" rel="noopener" data-i18n="projects.code">code</a>
+            </div>
+          </div>
+          <h3>Shahnameh Transformer LM</h3>
+          <p data-i18n="projects.desc3">A GPT-style transformer built from scratch — multi-head attention, feed-forward blocks, training loop — trained character-by-character on Ferdowsi's <em>Shahnameh</em> to generate original Persian verse.</p>
+          <div class="tag-list small">
+            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Transformers</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-kind" data-i18n="projects.kind4">web · full-stack</span>
+            <div class="project-links">
+              <a href="https://github.com/mirzagol/appointment-manager" target="_blank" rel="noopener" data-i18n="projects.code">code</a>
+            </div>
+          </div>
+          <h3>Appointment Manager</h3>
+          <p data-i18n="projects.desc4">Mobile-first workshop reservation system for a school event: automatic capacity management, an admin dashboard, and reporting, built on Node.js and SQLite.</p>
+          <div class="tag-list small">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">SQLite</span><span class="tag">MUI</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-kind" data-i18n="projects.kind5">stats · research</span>
+            <div class="project-links">
+              <a href="https://github.com/mirzagol/From-Flat-to-Mountain" target="_blank" rel="noopener" data-i18n="projects.code">code</a>
+            </div>
+          </div>
+          <h3>From Flat to Mountain</h3>
+          <p data-i18n="projects.desc5">Reproducible statistical analysis of UCI World Tour rider performance across stage profiles — ANOVA, mixed-effects models, bootstrap CIs — written up as a LaTeX report with programmatically generated figures.</p>
+          <div class="tag-list small">
+            <span class="tag">Python</span><span class="tag">statsmodels</span><span class="tag">LaTeX</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-kind" data-i18n="projects.kind6">database</span>
+            <div class="project-links">
+              <a href="https://github.com/mirzagol/electionSimulator" target="_blank" rel="noopener" data-i18n="projects.code">code</a>
+            </div>
+          </div>
+          <h3>Election Simulator</h3>
+          <p data-i18n="projects.desc6">An entire election modeled as a PostgreSQL schema — tables, views, triggers, and stored functions enforcing voting rules and computing results, not just CRUD.</p>
+          <div class="tag-list small">
+            <span class="tag">PostgreSQL</span><span class="tag">PL/pgSQL</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="more-projects reveal">
+        <h4 data-i18n="projects.moreTitle">More on GitHub</h4>
+        <div class="more-list">
+          <a href="https://github.com/mirzagol/DecisionTree" target="_blank" rel="noopener" data-i18n="projects.more1">Decision Tree from scratch →</a>
+          <a href="https://github.com/mirzagol/SVM" target="_blank" rel="noopener" data-i18n="projects.more2">SVM &amp; plate recognition →</a>
+          <a href="https://github.com/mirzagol/neural-network" target="_blank" rel="noopener" data-i18n="projects.more3">FashionMNIST classifier →</a>
+          <a href="https://github.com/mirzagol/Genetic-Algorithm" target="_blank" rel="noopener" data-i18n="projects.more4">Genetic programming →</a>
+          <a href="https://github.com/mirzagol/DataMining" target="_blank" rel="noopener" data-i18n="projects.more5">Housing price regression →</a>
+          <a href="https://github.com/mirzagol" target="_blank" rel="noopener" data-i18n="projects.more6">All repositories →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">~/experience.log</p>
+      <h2 class="section-title reveal" data-i18n="exp.title">Where I've worked &amp; taught.</h2>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026 — Present</span>
+            <h3 data-i18n="exp.role1">M.Sc. Data Science</h3>
+            <p class="timeline-org">TU Dortmund University</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Sep 2025 — Present</span>
+            <h3 data-i18n="exp.role2">Teaching Assistant, Software Design Principles</h3>
+            <p class="timeline-org">Amirkabir University of Technology</p>
+            <p data-i18n="exp.desc2">Weekly tutorials on design patterns and software architecture, translating theory into applied exercises.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Sep 2024 — Sep 2025</span>
+            <h3 data-i18n="exp.role3">Business Process &amp; Data Advisor</h3>
+            <p class="timeline-org">Oher Furniture</p>
+            <p data-i18n="exp.desc3">Analyzed production and warehouse data to identify bottlenecks; recommendations on layout and routing were adopted by plant leadership.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Sep 2024 — Jan 2025</span>
+            <h3 data-i18n="exp.role4">Teaching Assistant, Data Mining &amp; Computer Workshop</h3>
+            <p class="timeline-org">Iran University of Science and Technology</p>
+            <p data-i18n="exp.desc4">Reviewed clustering/classification implementations; ran Linux, Git, and dev-tooling labs.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jun 2024 — Sep 2024</span>
+            <h3 data-i18n="exp.role5">IT Administrator</h3>
+            <p class="timeline-org">Payab Kosar</p>
+            <p data-i18n="exp.desc5">Deployed NAS + FTPS for secure company storage; built an internal office-automation system to digitize paperwork.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2024 — Jun 2024</span>
+            <h3 data-i18n="exp.role6">Teaching Assistant, Computer Vision</h3>
+            <p class="timeline-org">Amirkabir University of Technology</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 — 2024</span>
+            <h3 data-i18n="exp.role7">B.Sc. Computer Science</h3>
+            <p class="timeline-org">Iran University of Science and Technology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <p class="section-tag reveal">~/contact</p>
+      <h2 class="section-title reveal" data-i18n="contact.title">Let's talk.</h2>
+      <p class="contact-sub reveal" data-i18n="contact.sub">
+        Looking for English-language / internationally-oriented Werkstudent roles in data science,
+        ML, or software engineering around Dortmund &amp; the Ruhr area — open to remote-friendly teams too.
+      </p>
+      <div class="contact-grid reveal">
+        <a class="contact-card" href="mailto:mirzagol_ho@outlook.com">
+          <span class="contact-label" data-i18n="contact.email">Email</span>
+          <span class="contact-value">mirzagol_ho@outlook.com</span>
+        </a>
+        <a class="contact-card" href="https://github.com/mirzagol" target="_blank" rel="noopener">
+          <span class="contact-label" data-i18n="contact.github">GitHub</span>
+          <span class="contact-value">github.com/mirzagol</span>
+        </a>
+        <div class="contact-card static">
+          <span class="contact-label" data-i18n="contact.location">Location</span>
+          <span class="contact-value" data-i18n="contact.locationValue">Dortmund, Germany</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p data-i18n="footer.copy">&copy; <span id="year"></span> Hossein Mirzagol. Built with HTML, CSS &amp; JS — no framework, on purpose.</p>
+    <a href="#home" data-i18n="footer.top">back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
