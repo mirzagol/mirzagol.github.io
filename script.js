@@ -4,6 +4,18 @@ function updateYear() {
 }
 updateYear();
 
+/* ---------------- theme toggle ---------------- */
+const themeToggle = document.getElementById('themeToggle');
+const systemTheme = () => (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+const storedTheme = localStorage.getItem('theme');
+if (storedTheme) document.documentElement.setAttribute('data-theme', storedTheme);
+themeToggle.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme') || systemTheme();
+  const next = current === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+
 // navbar background on scroll
 const navbar = document.getElementById('navbar');
 const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 12);
