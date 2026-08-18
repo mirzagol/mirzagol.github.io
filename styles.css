@@ -279,6 +279,11 @@ a { color: inherit; text-decoration: none; }
 
 /* about */
 .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: start; }
+.about-photo {
+  width: 104px; height: 104px; border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--border); outline: 3px solid rgba(212,165,72,0.15); outline-offset: 3px;
+  margin-bottom: 22px; display: block;
+}
 .about-copy p { color: var(--text-dim); margin-bottom: 18px; font-size: 1.02rem; }
 .about-copy strong { color: var(--text); }
 .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
