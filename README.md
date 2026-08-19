@@ -39,7 +39,4 @@ python3 -m http.server 8000
 
 ## Updating content
 
-All real data (repos, dates, roles) was pulled from `github.com/mirzagol`
-and `Hossein_Mirzagol_Master_CV.md` as of Aug 2026. Update project cards in
-the `#projects` section and timeline entries in `#experience` as new work
-ships.
+All real data (repos, dates, roles) was pulled from `github.com/mirzagol` as of Aug 2026.
