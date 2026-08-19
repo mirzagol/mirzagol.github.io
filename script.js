@@ -100,7 +100,7 @@ const translations = {
     'contact.sub': 'Looking for English-language / internationally-oriented Werkstudent roles in data science, ML, or software engineering around Dortmund &amp; the Ruhr area — open to remote-friendly teams too.',
     'contact.email': 'Email', 'contact.github': 'GitHub', 'contact.location': 'Location',
     'contact.locationValue': 'Dortmund, Germany',
-    'footer.copy': '&copy; <span id="year"></span> Hossein Mirzagol. Built with HTML, CSS &amp; JS — no framework, on purpose.',
+    'footer.copy': '&copy; <span id="year"></span> Hossein Mirzagol. Built with HTML, CSS &amp; JS — no framework!',
     'footer.top': 'back to top ↑',
   },
   de: {
@@ -152,7 +152,7 @@ const translations = {
     'contact.sub': 'Auf der Suche nach englischsprachigen / international ausgerichteten Werkstudent:innen-Stellen in Data Science, ML oder Softwareentwicklung im Raum Dortmund &amp; Ruhrgebiet — auch offen für remote-freundliche Teams.',
     'contact.email': 'E-Mail', 'contact.github': 'GitHub', 'contact.location': 'Standort',
     'contact.locationValue': 'Dortmund, Deutschland',
-    'footer.copy': '&copy; <span id="year"></span> Hossein Mirzagol. Gebaut mit HTML, CSS &amp; JS — bewusst ohne Framework.',
+    'footer.copy': '&copy; <span id="year"></span> Hossein Mirzagol. Gebaut mit HTML, CSS &amp; JS — ohne Framework!',
     'footer.top': 'nach oben ↑',
   },
 };
